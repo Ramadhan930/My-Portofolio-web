@@ -5,6 +5,8 @@ export async function getPinnedRepos() {
   const pinnedNames = [
     "API-Gateaway-for-Micro-SaaS", // Perhatikan ejaan 'Gateaway' (pake 'e') sesuai gambar kamu
     "Backend-new",
+    "nagari-garagahan-profile-web",
+    "My-Portofolio-web",
   ];
 
   try {
