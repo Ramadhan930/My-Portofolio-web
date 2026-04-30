@@ -24,7 +24,7 @@ export default async function Home() {
             {/* Kontainer Gambar Utama - Noir Style */}
             <div className="relative w-full h-full bg-zinc-900 overflow-hidden group shadow-2xl">
               <Image
-                src="/personal-foto.png" // Pastikan file gambar_2.jpg sudah kamu rename atau sesuaikan path-nya
+                src="/personal-foto.jpg" // Pastikan file gambar_2.jpg sudah kamu rename atau sesuaikan path-nya
                 alt="Muhammad Gilang Ramadhan"
                 fill
                 priority
