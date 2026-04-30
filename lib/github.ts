@@ -7,6 +7,7 @@ export async function getPinnedRepos() {
     "Backend-new",
     "nagari-garagahan-profile-web",
     "My-Portofolio-web",
+    "Presonal-Finance-Tracker-API",
   ];
 
   try {

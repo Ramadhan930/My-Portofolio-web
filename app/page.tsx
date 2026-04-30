@@ -21,16 +21,23 @@ export default async function Home() {
             {/* Garis Kanan (Right Border) */}
             <div className="absolute top-0 -right-4 w-[2px] h-full bg-black transform origin-top scale-y-100 group-hover:scale-y-110 transition-transform duration-500"></div>
 
-            {/* Kontainer Gambar Utama */}
-            <div className="relative w-full h-full bg-gray-100 overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 shadow-sm">
+            {/* Kontainer Gambar Utama - Noir Style */}
+            <div className="relative w-full h-full bg-zinc-900 overflow-hidden group shadow-2xl">
               <Image
-                src="/image.png"
+                src="/personal-foto.png" // Pastikan file gambar_2.jpg sudah kamu rename atau sesuaikan path-nya
                 alt="Muhammad Gilang Ramadhan"
                 fill
                 priority
-                className="object-cover"
+                className="object-cover grayscale contrast-[1.1] brightness-[0.9] hover:grayscale-0 hover:contrast-100 hover:brightness-100 transition-all duration-1000 ease-in-out"
                 sizes="(max-width: 768px) 100vw, 33vw"
               />
+
+              {/* Overlay Vignette Lembut agar menyatu dengan background hitam */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
+
+              {/* Aksen L-Frame Minimalis (Opsional) */}
+              <div className="absolute top-4 right-4 w-8 h-[1px] bg-white/20 group-hover:bg-white transition-colors" />
+              <div className="absolute top-4 right-4 w-[1px] h-8 bg-white/20 group-hover:bg-white transition-colors" />
             </div>
           </div>
           <div className="md:w-2/3">
